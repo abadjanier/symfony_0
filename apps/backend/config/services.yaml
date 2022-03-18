@@ -1,0 +1,17 @@
+imports:
+  - { resource: ../../../src/Shared/Infrastructure/Symfony/DependencyInjection/backoffice_services.yaml }
+
+
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+
+  App\Backend\Controller\:
+    resource: '../src/Controller'
+
+  App\Shared\:
+    resource: '../../../src/Shared'
+
+  App\Backoffice\:
+    resource: '../../../src/Backoffice'

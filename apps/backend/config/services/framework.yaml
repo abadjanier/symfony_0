@@ -1,0 +1,10 @@
+# config/framework.yaml
+twig:
+  default_path: '%kernel.project_dir%/templates'
+  paths:
+      templates: ~
+
+
+framework:
+  secret: S0ME_SECRET
+  profiler: { only_exceptions: false }
